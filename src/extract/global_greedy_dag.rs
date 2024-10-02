@@ -1,3 +1,4 @@
+use crate::NotNan;
 use std::iter;
 
 use rpds::HashTrieSet;

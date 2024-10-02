@@ -1,7 +1,7 @@
 use egraph_serialize::{ClassId, NodeId};
 use indexmap::IndexMap;
 
-use crate::ExtractionResult;
+use crate::extract::ExtractionResult;
 
 pub fn get_term(
     egraph: &egraph_serialize::EGraph,
@@ -12,7 +12,6 @@ pub fn get_term(
         egraph.root_eclasses.len() == 1,
         "expected exactly one root eclass",
     );
-    let root_cid = egraph.root_eclasses[0].clone();
     let mut result_egraph = egraph_serialize::EGraph::default();
     // populate_egraph(egraph, &mut result_egraph, choices, root_cid);
     for cid in choices.keys() {

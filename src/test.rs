@@ -1,4 +1,4 @@
-use crate::{extractors, Extractor, Optimal, EPSILON_ALLOWANCE};
+use extraction_gym::{extractors, Extractor, Optimal, EPSILON_ALLOWANCE};
 pub type Cost = NotNan<f64>;
 use egraph_serialize::{EGraph, Node, NodeId};
 use ordered_float::NotNan;

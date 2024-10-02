@@ -2,7 +2,9 @@ use indexmap::IndexMap;
 use rustc_hash::{FxHashMap, FxHashSet};
 use std::collections::HashMap;
 
-pub use crate::*;
+use crate::{Cost, INFINITY};
+
+use egraph_serialize::{ClassId, EGraph, Node, NodeId};
 
 pub mod bottom_up;
 pub mod faster_bottom_up;
